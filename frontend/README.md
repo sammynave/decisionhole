@@ -45,6 +45,7 @@ ember deploy:list --environment production
 ember deploy:activate --revision <REVISION> --environment production
 
 ## Further Reading / Useful Links
+[Deploying an ember-cli application to Amazon S3](http://kerrygallagher.co.uk/deploying-an-ember-cli-application-to-amazon-s3/)
 
 * [ember.js](http://emberjs.com/)
 * [ember-cli](http://www.ember-cli.com/)
