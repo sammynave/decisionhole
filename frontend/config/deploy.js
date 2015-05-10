@@ -9,7 +9,7 @@ module.exports = {
     assets: {
       accessKeyId: process.env['S3_KEY'],
       secretAccessKey: process.env['S3_SECRET'],
-      bucket: 'decisionhole.com'
+      bucket: 'decisionhole-assets'
     }
   }
 };

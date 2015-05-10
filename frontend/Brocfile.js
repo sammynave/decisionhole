@@ -3,6 +3,9 @@
 var EmberApp = require('ember-cli/lib/broccoli/ember-app');
 
 var app = new EmberApp({
+  fingerprint: {
+    prepend: 'http://decisionhole-assets.s3-website-us-east-1.amazonaws.com/'
+  }
 });
 
 // Use `app.import` to add additional libraries to the generated
