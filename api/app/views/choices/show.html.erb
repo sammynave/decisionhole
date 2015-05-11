@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @choice.title %>
+</p>
+
+<p>
+  <strong>Image:</strong>
+  <%= @choice.image %>
+</p>
+
+<p>
+  <strong>Belongsto:</strong>
+  <%= @choice.belongsTo %>
+</p>
+
+<%= link_to 'Edit', edit_choice_path(@choice) %> |
+<%= link_to 'Back', choices_path %>
