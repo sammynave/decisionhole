@@ -1,11 +1,25 @@
 /* global require, module */
 
 var EmberApp = require('ember-cli/lib/broccoli/ember-app');
+var env = EmberApp.env();
+
+function isProduction(){
+  var isProd = false;
+  if (env === "production"){
+    isProd = true;
+  }
+  return isProd;
+}
+
+var isProd = isProduction();
 
 var app = new EmberApp({
   fingerprint: {
+    enabled: isProd,
     prepend: 'http://decisionhole-assets.s3-website-us-east-1.amazonaws.com/'
-  }
+  },
+  minifyCSS: { enabled: isProd },
+  minifyJS: { enabled: isProd }
 });
 
 // Use `app.import` to add additional libraries to the generated

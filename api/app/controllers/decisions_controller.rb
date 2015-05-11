@@ -5,6 +5,7 @@ class DecisionsController < ApplicationController
   # GET /decisions.json
   def index
     @decisions = Decision.all
+    render json: @decision
   end
 
   # GET /decisions/1
