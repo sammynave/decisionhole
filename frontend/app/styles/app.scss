@@ -1,0 +1,10 @@
+@import "base/colors";
+
+body {
+  background-color: $light-orange;
+}
+
+.hole {
+  fill: $darker-blue;
+  stroke: $light-blue;
+}
