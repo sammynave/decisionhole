@@ -6,6 +6,6 @@ var Router = Ember.Router.extend({
 });
 
 export default Router.map(function() {
-  this.route('decisions');
-  this.route('decision');
+  this.route('questions');
+  this.route('question');
 });
