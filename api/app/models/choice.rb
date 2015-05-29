@@ -1,6 +1,3 @@
 class Choice < ActiveRecord::Base
-  belongs_to :decision
-  has_many :votes
-
-  validates :image_url, presence: true
+  belongs_to :question, class_name: "Question"
 end

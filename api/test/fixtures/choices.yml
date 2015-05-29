@@ -1,11 +1,11 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
+  decision_id: 
   title: MyString
-  image: MyString
-  belongsTo: 
+  image_url: MyString
 
 two:
+  decision_id: 
   title: MyString
-  image: MyString
-  belongsTo: 
+  image_url: MyString
