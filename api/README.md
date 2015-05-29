@@ -7,6 +7,7 @@
 * Configuration
 
 * Database creation
+`bundle exec rake db:setup` to setup and seed db.
 
 * Database initialization
 

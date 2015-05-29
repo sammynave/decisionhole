@@ -4,7 +4,7 @@ class QuestionsController < ApplicationController
   # GET /questions
   # GET /questions.json
   def index
-    render json: Question.all, each_serializer: QuestionSerializer
+    render json: Question.all, include: ['choices'], root: "questions"
   end
 
   # GET /questions/1
@@ -16,10 +16,7 @@ class QuestionsController < ApplicationController
   # POST /questions
   # POST /questions.json
   def create
-    choice_a = Choice.new(params[:choices]).save
-
     question = Question.new(question_params)
-    question.choices = [choice_a, choice_b]
 
     if @question.save
       render json: question, status: :created, location: question

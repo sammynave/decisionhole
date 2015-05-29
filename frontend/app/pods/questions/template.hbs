@@ -1,0 +1,20 @@
+{{#each model as |question|}}
+<div class="decision">
+  <div class="question">
+    <span class="author">sammy</span> asks
+    <p class="question-text">{{question.title}}</p>
+  </div>
+  <div class="choices">
+    <div class="choice-1">
+      <div>worf image</div>
+      <span>worf</span>
+    </div>
+    <div class="choice-2">
+      <div>gandalf image</div>
+      <span>gandalf</span>
+    </div>
+  </div>
+</div>
+{{/each}}
+
+{{outlet}}
