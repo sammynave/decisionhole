@@ -5,8 +5,7 @@ gem 'rails', '4.2.1'
 gem 'rails-api'
 # Use postgresql as the database for Active Record
 gem 'pg'
-gem 'spring', :group => :development
-gem 'active_model_serializers'
+gem 'active_model_serializers', '0.10.0.rc1'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
