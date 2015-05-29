@@ -4,7 +4,7 @@ class QuestionsController < ApplicationController
   # GET /questions
   # GET /questions.json
   def index
-    render json: Question.all, each_serializer: QuestionSerializer
+    render json: Question.all, include: ['choices']
   end
 
   # GET /questions/1
